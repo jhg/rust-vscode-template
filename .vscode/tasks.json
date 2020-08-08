@@ -1,0 +1,56 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cargo",
+			"subcommand": "build",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"group": "build",
+			"label": "Rust: cargo build - {{project-name}}"
+		},
+		{
+			"type": "cargo",
+			"subcommand": "test",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"group": "test",
+			"dependsOn": ["Rust: cargo build - {{project-name}}"],
+			"label": "Rust: cargo test - {{project-name}}"
+		},
+		{
+			"type": "shell",
+			"command": "cargo doc --no-deps --document-private-items --all-features",
+			"presentation": {
+				"echo": true,
+				"reveal": "silent",
+				"focus": false,
+				"panel": "shared",
+				"showReuseMessage": true,
+				"clear": false
+			},
+			"group": "none",
+			"label": "Rust: cargo doc - {{project-name}}"
+		},
+		{
+			"type": "process",
+			"command": "Explorer",
+			"args": ["target/doc/{{crate_name}}/index.html"],
+			"windows": {
+				"args": ["target\\doc\\{{crate_name}}\\index.html"]
+			},
+			"presentation": {
+				"echo": false,
+				"reveal": "never",
+				"focus": false,
+				"panel": "dedicated",
+				"showReuseMessage": false,
+				"clear": false
+			},
+			"dependsOn": ["Rust: cargo doc - {{project-name}}"],
+			"label": "Open: HTML doc - {{project-name}}"
+		}
+	]
+}
