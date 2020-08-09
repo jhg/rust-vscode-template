@@ -1,5 +1,16 @@
 # {{project-name}}
-Rust template for Cargo generate with VSCode extensions and tasks
+Rust template for Cargo generate with VSCode extensions and tasks.
+
+## Using this template
+Install [`cargo-generate`](https://github.com/ashleygwilliams/cargo-generate) executing:
+```
+$ cargo install cargo-generate
+```
+
+Create a new crate using this template:
+```
+$ cargo generate --git https://github.com/jhg/rust-vscode-template.git --name myproject
+```
 
 ## Get started
 You need to [install Rust](https://www.rust-lang.org/tools/install) (recommended with rustup).
