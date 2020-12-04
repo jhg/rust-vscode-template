@@ -51,6 +51,13 @@
             "args": ["test"],
             "group": "test"
         },
+        {
+            "label": "Rust: rustup update",
+            "type": "shell",
+            "command": "rustup",
+            "args": ["update"],
+            "group": "none"
+        },
         // Tasks same with both extensions:
         {
             "label": "Rust: cargo doc",
@@ -64,13 +71,6 @@
             "type": "shell",
             "command": "cargo",
             "args": ["doc", "--open"],
-            "group": "none"
-        },
-        {
-            "label": "Rust: rustup update",
-            "type": "shell",
-            "command": "rustup",
-            "args": ["update"],
             "group": "none"
         }
     ]
