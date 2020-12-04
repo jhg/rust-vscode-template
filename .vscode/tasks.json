@@ -1,7 +1,8 @@
 {
     "version": "2.0.0",
     "tasks": [
-        {
+        // Tasks for RLS extension:
+        /*{
             "label": "Rust: cargo check - {{project-name}}",
             "type": "cargo",
             "subcommand": "check",
@@ -27,19 +28,49 @@
                 "$rustc"
             ],
             "group": "test"
+        },*/
+        // Tasks for rust-analyzer extension:
+        {
+            "label": "Rust: cargo check",
+            "type": "shell",
+            "command": "cargo",
+            "args": ["check"],
+            "group": "none"
         },
         {
-            "label": "Rust: cargo doc - {{project-name}}",
+            "label": "Rust: cargo build",
+            "type": "shell",
+            "command": "cargo",
+            "args": ["build"],
+            "group": "build"
+        },
+        {
+            "label": "Rust: cargo test",
+            "type": "shell",
+            "command": "cargo",
+            "args": ["test"],
+            "group": "test"
+        },
+        // Tasks same with both extensions:
+        {
+            "label": "Rust: cargo doc",
             "type": "shell",
             "command": "cargo",
             "args": ["doc"],
             "group": "none"
         },
         {
-            "label": "Rust: cargo doc --open - {{project-name}}",
+            "label": "Rust: cargo doc --open",
             "type": "shell",
             "command": "cargo",
             "args": ["doc", "--open"],
+            "group": "none"
+        },
+        {
+            "label": "Rust: rustup update",
+            "type": "shell",
+            "command": "rustup",
+            "args": ["update"],
             "group": "none"
         }
     ]
