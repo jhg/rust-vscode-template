@@ -28,7 +28,7 @@ To build the crate run:
 $ cargo build
 ```
 If you're using Visual Studio Code and installed the recommended extensions you can use `ctrl+shift+b`
-(or menu `Terminal -> Run Build Task`) and run the task `Rust: cargo build - {{project-name}}`.
+(or menu `Terminal -> Run Build Task`) and run the task `Rust: cargo build`.
 
 That will build with dev profile the crate at `target/debug/`.
 
@@ -38,7 +38,7 @@ To run tests execute:
 $ cargo test
 ```
 If you're using Visual Studio Code you can use the menu `Terminal -> Run Task`
-and run the task `Rust: cargo test - {{project-name}}`.
+and run the task `Rust: cargo test`.
 
 ## Doc
 To generate documentation run:
@@ -47,5 +47,5 @@ $ cargo doc --no-deps --document-private-items --all-features
 ```
 Then open in your favorite browser `target/doc/{{crate_name}}/index.html` HTML document.
 
-Also it has available a task `Rust: cargo doc - {{project-name}}` for Visual Studio Code.
-But maybe you will prefer the task `Open: HTML doc - {{project-name}}` to build and open the doc in the browser.
+Also it has available a task `Rust: cargo doc` for Visual Studio Code.
+But maybe you will prefer the task `Rust: cargo doc --open` to build and open the doc in the browser.
