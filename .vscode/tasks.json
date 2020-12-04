@@ -3,7 +3,7 @@
     "tasks": [
         // Tasks for RLS extension:
         /*{
-            "label": "Rust: cargo check - {{project-name}}",
+            "label": "Rust: cargo check",
             "type": "cargo",
             "subcommand": "check",
             "problemMatcher": [
@@ -12,7 +12,7 @@
             "group": "build"
         },
         {
-            "label": "Rust: cargo build - {{project-name}}",
+            "label": "Rust: cargo build",
             "type": "cargo",
             "subcommand": "build",
             "problemMatcher": [
@@ -21,7 +21,7 @@
             "group": "build"
         },
         {
-            "label": "Rust: cargo test - {{project-name}}",
+            "label": "Rust: cargo test",
             "type": "cargo",
             "subcommand": "test",
             "problemMatcher": [
@@ -52,7 +52,7 @@
             "group": "test"
         },
         {
-            "label": "Rust: rustup update",
+            "label": "Rust: rustup update", // RLS has an command rls.update to update current toolchain
             "type": "shell",
             "command": "rustup",
             "args": ["update"],
