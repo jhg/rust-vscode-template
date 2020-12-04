@@ -63,14 +63,14 @@
             "label": "Rust: cargo doc",
             "type": "shell",
             "command": "cargo",
-            "args": ["doc"],
+            "args": ["doc", "--no-deps", "--document-private-items", "--all-features"],
             "group": "none"
         },
         {
             "label": "Rust: cargo doc --open",
             "type": "shell",
             "command": "cargo",
-            "args": ["doc", "--open"],
+            "args": ["doc", "--no-deps", "--document-private-items", "--all-features", "--open"],
             "group": "none"
         }
     ]
