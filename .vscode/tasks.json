@@ -35,7 +35,7 @@
             "type": "shell",
             "command": "cargo",
             "args": ["check"],
-            "group": "none"
+            "group": "build"
         },
         {
             "label": "Rust: cargo build",
