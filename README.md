@@ -27,7 +27,7 @@ To build the crate run:
 ```
 $ cargo build
 ```
-If you're using Visual Studio Code and installed the recommended extensions you can use `ctrl+shift+b`
+If you're using Visual Studio Code and installed the recommended extensions you can use `ctrl+shift+b`/`⌘+shift+b`
 (or menu `Terminal -> Run Build Task`) and run the task `Rust: cargo build`.
 
 That will build with dev profile the crate at `target/debug/`.
