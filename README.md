@@ -1,6 +1,8 @@
 # {{project-name}}
 Rust template for Cargo generate with VSCode extensions and tasks.
 
+![Crates.io version](https://img.shields.io/crates/v/{{project-name}}) ![Crates.io license](https://img.shields.io/crates/l/{{project-name}}) ![Crates.io downloads](https://img.shields.io/crates/d/{{project-name}})
+
 ## Using this template
 Install [`cargo-generate`](https://github.com/ashleygwilliams/cargo-generate) executing:
 ```
