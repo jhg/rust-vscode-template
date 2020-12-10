@@ -1,7 +1,29 @@
 # {{project-name}}
-Rust template for Cargo generate with VSCode extensions and tasks.
+Rust template for Cargo generate with VSCode extensions, tasks and GitHub actions.
 
 ![Crates.io version](https://img.shields.io/crates/v/{{project-name}}) ![Crates.io license](https://img.shields.io/crates/l/{{project-name}}) ![Crates.io downloads](https://img.shields.io/crates/d/{{project-name}})
+
+## What does this template give you
+- VSCode extension:
+  - Use rust-analyzer and ignore RLS
+  - LLDB debug extension
+  - Test explorer
+  - Crates search and versions check
+  - Better TOML
+  - TOML snippets
+  - GitLens
+  - ToDo tree
+- VSCode tasks:
+  - Cargo check, build & test
+  - Rustup update
+  - Cargo doc & doc --open
+- GitHub actions:
+  - Cargo audit daily, when push and in pull-request to main, master, dev or develop
+  - Lint with Clippy and rustfmt when push and in pull-request
+  - Cargo check & test weekly (maybe you want to remove this if you use Cargo.lock), when push and in pull-request
+  - Cargo check & test with nightly daily
+- Cargo.toml
+  - Publish to false until you are ready to publish and change it
 
 ## Using this template
 Install [`cargo-generate`](https://github.com/ashleygwilliams/cargo-generate) executing:
