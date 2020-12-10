@@ -22,8 +22,10 @@ Rust template for Cargo generate with VSCode extensions, tasks and GitHub action
   - Lint with Clippy and rustfmt when push and in pull-request
   - Cargo check & test weekly (maybe you want to remove this if you use Cargo.lock), when push and in pull-request
   - Cargo check & test with nightly daily
-- Cargo.toml
+- Cargo.toml:
   - Publish to false until you are ready to publish and change it
+- README.md:
+  - Badges of shields.io with version in crates.io, license and downloads
 
 ## Using this template
 Install [`cargo-generate`](https://github.com/ashleygwilliams/cargo-generate) executing:
