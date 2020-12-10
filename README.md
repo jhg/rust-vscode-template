@@ -26,6 +26,8 @@ Rust template for Cargo generate with VSCode extensions, tasks and GitHub action
   - Publish to false until you are ready to publish and change it
 - README.md:
   - Badges of shields.io with version in crates.io, license and downloads
+- LICENSE:
+  - The Unlicense (you can use it or change it)
 
 ## Using this template
 Install [`cargo-generate`](https://github.com/ashleygwilliams/cargo-generate) executing:
