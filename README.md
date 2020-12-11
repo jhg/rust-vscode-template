@@ -13,6 +13,7 @@ Rust template for Cargo generate with VSCode extensions, tasks and GitHub action
   - TOML snippets
   - GitLens
   - ToDo tree
+  - Markdown lint
 - VSCode tasks:
   - Cargo check, build & test
   - Rustup update
