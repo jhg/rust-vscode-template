@@ -1,7 +1,22 @@
 # {{project-name}}
 Rust template for Cargo generate with VSCode extensions, tasks and GitHub actions.
 
-![Crates.io version](https://img.shields.io/crates/v/{{project-name}}) ![Crates.io license](https://img.shields.io/crates/l/{{project-name}}) ![Crates.io downloads](https://img.shields.io/crates/d/{{project-name}})
+[![Crates.io version](https://img.shields.io/crates/v/{{project-name}})](https://crates.io/crates/{{project-name}})
+[![Crates.io license](https://img.shields.io/crates/l/{{project-name}})](https://unlicense.org/)
+[![Crates.io downloads](https://img.shields.io/crates/d/{{project-name}})](.)
+
+## Using this template
+Install [`cargo-generate`](https://github.com/ashleygwilliams/cargo-generate) executing:
+```
+$ cargo install cargo-generate
+```
+
+Create a new crate using this template:
+```
+$ cargo generate --git https://github.com/jhg/rust-vscode-template.git --name myproject
+```
+
+Delete `Using this template` and `What does this template give you` sections and second line short description from README.md file, delete what you don't need or fine tune it for you.
 
 ## What does this template give you
 - VSCode extension:
@@ -29,17 +44,9 @@ Rust template for Cargo generate with VSCode extensions, tasks and GitHub action
   - Badges of shields.io with version in crates.io, license and downloads
 - LICENSE:
   - The Unlicense (you can use it or change it)
-
-## Using this template
-Install [`cargo-generate`](https://github.com/ashleygwilliams/cargo-generate) executing:
-```
-$ cargo install cargo-generate
-```
-
-Create a new crate using this template:
-```
-$ cargo generate --git https://github.com/jhg/rust-vscode-template.git --name myproject
-```
+- rust-toolchain:
+  - Use that file if you want to choose a different toolchain than default (like nightly)
+  - https://doc.rust-lang.org/edition-guide/rust-2018/rustup-for-managing-rust-versions.html#managing-versions
 
 ## Get started
 You need to [install Rust](https://www.rust-lang.org/tools/install) (recommended with rustup).
