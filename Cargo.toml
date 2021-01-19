@@ -1,11 +1,20 @@
 [package]
 name = "{{project-name}}"
+description = "{{project-name}} short description"
 version = "0.1.0"
 # See: https://doc.rust-lang.org/cargo/reference/manifest.html#the-license-and-license-file-fields
 # List of values: https://spdx.org/licenses/
 license = "Unlicense"
 authors = ["{{authors}}"]
 edition = "2018"
+# Maximum of 5, each with only ASCII text, start with a letter, and only
+# contain letters, numbers, _ or -, and have at most 20 characters
+keywords = []
+# Maximum of 5, see availables: https://crates.io/category_slugs
+categories = []
+readme = "README.md"
+repository = ""
+exclude = [".github/**", ".vscode/**"]
 # Delete next line when it is ready to be published
 publish = false
 
